@@ -7,7 +7,7 @@
 
     <groupId>store.quired</groupId>
     <artifactId>quired-sdk-java</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Quired Java API Client</name>
     <description>Java SDK for the Quired REST API.</description>
