@@ -4,7 +4,7 @@ Java SDK for the Quired REST API.
 ## Installation
 
 Maven:
-```
+```json
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -20,7 +20,7 @@ Maven:
 ```
 
 Gradle:
-```
+```gradle
 repositories {
     mavenCentral()
     maven { url = 'https://jitpack.io' }
