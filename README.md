@@ -30,3 +30,34 @@ dependencies {
     implementation 'com.github.quiredstore:quired-sdk-java:version'
 }
 ```
+
+## Usage
+```java
+package org.example;
+
+import store.quired.api.QuiredClient;
+
+public class Main {
+    static void main(String[] args) {
+        // init
+        QuiredClient client = QuiredClient.builder()
+                .apiKey("Your API Key")
+                .build();
+
+        // get shop information
+        var shop = client.shop().get();
+        System.out.println("Shop: " + shop.name());
+
+        // get products
+        var products = client.products().list();
+
+        products.items().forEach(product ->
+                System.out.println(
+                        product.id() + " | " +
+                                product.title() + " | " +
+                                product.price()
+                )
+        );
+    }
+}
+```
