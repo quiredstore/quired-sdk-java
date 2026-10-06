@@ -4,7 +4,7 @@ Java SDK for the Quired REST API.
 ## Installation
 
 Maven:
-```json
+```xml
 <repositories>
     <repository>
         <id>jitpack.io</id>
